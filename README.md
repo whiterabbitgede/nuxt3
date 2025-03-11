@@ -24,7 +24,10 @@ pm2 start .output/server/index.mjs --name "nuxt-app
 ```
 
 ```bash
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
+# to server.allowedHosts in vite -> nuxt.config.ts
+
+# https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
