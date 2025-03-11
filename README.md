@@ -5,6 +5,8 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 ## First start
 
 For Nuxt 3:
+
+```bash
 npx nuxi init nuxt-app
 cd nuxt-app
 npm install
@@ -13,10 +15,11 @@ npm run dev
 
 npm run build
 
-npm run start
-
-```bash
+# with node
 node .output/server/index.mjs
+
+# with pm2
+pm2 start .output/server/index.mjs --name "nuxt-app
 
 ```
 
