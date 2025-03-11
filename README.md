@@ -21,6 +21,9 @@ node .output/server/index.mjs
 # with pm2
 pm2 start .output/server/index.mjs --name "nuxt-app
 
+# Generate static files
+npm run generate
+
 ```
 
 ```bash
