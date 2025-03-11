@@ -23,6 +23,7 @@ pm2 start .output/server/index.mjs --name "nuxt-app
 
 # Generate static files
 npm run generate
+npx serve .output/public 
 
 ```
 
