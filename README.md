@@ -2,6 +2,33 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## First start
+
+For Nuxt 3:
+npx nuxi init nuxt-app
+cd nuxt-app
+npm install
+
+npm run dev
+
+npm run build
+
+npm run start
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  compatibilityDate: '2024-11-01',
+  devtools: { enabled: true },
+  vite: {
+    server: {
+      host: '0.0.0.0', // Allow external network access
+      strictPort: true,
+      allowedHosts: ['prfsdashboard2.exampledomain.local'],
+    }
+  }
+})
+
+
 ## Setup
 
 Make sure to install dependencies:
